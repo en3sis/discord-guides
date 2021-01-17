@@ -1,0 +1,23 @@
+{
+  "name": "rich_embeds",
+  "version": "1.0.0",
+  "description": "Some discord-js example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/en3sis/discord-guides.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/en3sis/discord-guides/issues"
+  },
+  "homepage": "https://github.com/en3sis/discord-guides#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
