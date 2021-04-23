@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const { token } = require('./config')
 const svgToPng = require('./examples/svgToPng')
 const htmlToPng = require('./examples/htmlToPng')
+const cache = require('./examples/cache')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -13,6 +14,11 @@ client.on('ready', () => {
 client.on('message', msg => {
   const args = msg.content
     .split(' ');
+
+  // Cache examples
+  if (msg.content.startsWith('cache')) {
+    cache(msg, args[1], args[2])
+  }
 
   // SVG to PNG Handler
   if (msg.content.startsWith('svg')) {
